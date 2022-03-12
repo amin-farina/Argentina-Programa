@@ -1,0 +1,70 @@
+
+// Devolverá el índice donde encontró al elemento. Recibe el valor a buscar y el arreglo donde buscará
+
+function sequentialSearch(element, array){
+
+    for (var i in array){
+  
+      if (array[i] == element) return i; 
+  
+    }
+  
+    return -1;
+  
+  }
+  
+   var letters = ["a", "b", "c", "d", "f", "g", "h", "i", "j", "k", "l", "m", "n"];
+  
+  console.log(sequentialSearch("g",letters));
+
+
+  var numbers = [4, 2, 5, 1, 3];
+
+  numbers.sort(function(a, b) {
+
+    return a - b;
+
+  });
+
+  console.log(numbers);
+
+
+
+  function addElement () {
+
+    // obtener el elemento div con id = "div_example"
+  
+    const existDiv = document.getElementById("div_example");
+  
+    // crear un nuevo elemento div 
+  
+    const newDiv = document.createElement("div");
+  
+    // agregar el nuevo elemento div existente
+  
+    existDiv.appendChild(newDiv);
+  
+  } ;
+
+
+
+  // Creacion de un elemento JSON
+
+  var JSONObj = { nombreLibro: 'El Hacedor', precio: 500 };
+
+  console.log(JSONObj);
+
+  // Transformar javascript a JSON
+
+  var deportista = { 
+    nombre : "Lionel Messi",
+    copas : "20"
+  }
+
+  console.log(JSON.stringify(deportista));
+
+  // Transformar JSON a javascript
+
+  var deportista2 = `{"nombre":"Lionel Messi","copas":"20"}`;
+
+  console.log(JSON.parse(deportista2));

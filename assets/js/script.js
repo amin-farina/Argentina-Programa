@@ -83,7 +83,7 @@ var deportista2 = `{"nombre":"Lionel Messi","copas":"20"}`;
     var HTML = " "
     for (var i = 0; i < nombresDeMiembros.length; i++) {
       if (activoDeMiembros[i]){
-         dato = ('<td class="table-success text-center">' + activoDeMiembros[i] + '</td>' + '<td>' + '<div class="alert alert-success"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg></div> ' + '</td>');
+         dato = ('<td class="table-success text-center">' + activoDeMiembros[i] + '</td>' );
       }
       else{
           dato = ('<td class="table-danger text-center">' + activoDeMiembros[i] + '</td>' )

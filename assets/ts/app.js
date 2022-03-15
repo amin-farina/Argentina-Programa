@@ -170,10 +170,10 @@ var TrenDeAterrizaje = /** @class */ (function () {
 }());
 var Aeroplano = /** @class */ (function () {
     function Aeroplano(pHelice, pTrenAterrizaje, pAlas, pCubierta) {
+        this.helice = pHelice;
         this.cubierta = pCubierta;
         this.alas = pAlas;
         this.trenAterrizaje = pTrenAterrizaje;
-        this.helice = pHelice;
     }
     Aeroplano.prototype.ToString = function () {
         var mensaje = "Aeroplano Compuesto por: ";
@@ -194,3 +194,10 @@ var Suma2 = /** @class */ (function () {
     };
     return Suma2;
 }());
+var Compass;
+(function (Compass) {
+    Compass[Compass["North"] = 0] = "North";
+    Compass["East"] = "1";
+    Compass[Compass["South"] = 2] = "South";
+    Compass["West"] = "3";
+})(Compass || (Compass = {}));

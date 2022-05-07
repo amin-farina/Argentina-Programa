@@ -7,10 +7,16 @@
       "reminder": true
     },
     {
-      "id": 2,
-      "text": "Ver final de Champions",
-      "day": "Agosto 5 a las 17:00",
-      "reminder": false
+      "text": "Ver a boquita",
+      "day": "Domingo",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "text": "Nueva Tarea",
+      "day": "Domingo",
+      "reminder": true,
+      "id": 3
     }
   ]
 }

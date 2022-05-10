@@ -14,3 +14,45 @@ h1 {
   font-weight: bold;
   font-size: 3.5rem;
 }
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+}
+
+p span {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+
+}
+
+.listadoIconos a{
+  text-decoration: none;
+}
+
+.listadoIconos a i {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 30px;
+  width: 30px;
+  height: 34px;
+  color: black;
+}
+
+
+.listadoIconos {
+  align-items: center;
+  justify-content:center;
+  display: flex;
+}
+
+
+.elDespues:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgb(190, 131, 22);
+}
+
+.bgitlab {
+  content: url('../../../assets/icons/gitlab-3.svg');
+}

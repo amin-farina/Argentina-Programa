@@ -1,0 +1,70 @@
+<div class="h-tot">
+  <div class="container pt-3">
+    <div class="text-center">
+      <h3>Historial de Vacs</h3>
+    </div>
+    <div class="align-center">
+      <table class="table pt-3 table-striped table-hover">
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">#</th>
+            <th scope="col">Cuenta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Dias</th>
+            <th scope="col">Hora</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let cuenta of cuentas">
+          <tr [ngClass]="{'table-success' : cuenta.nombre === 'Tematecon', 'table-danger': cuenta.nombre === 'Amiin741', 'table-warning': cuenta.nombre === 'Amiin742', 'table-info': cuenta.nombre === 'Pablo'} ">
+            <th scope="row">{{cuenta.id}}</th>
+            <td>{{cuenta.nombre}}</td>
+            <td>{{cuenta.fecha}}</td>
+            <td>{{cuenta.dias}}</td>
+            <td>{{cuenta.hora}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row align-center">
+      <div class="col-12 justify-content-center d-flex">
+        <button class="btn btn-success mx-2">Add Vac</button>
+        <button class="btn btn-primary mx-2">Modificar</button>
+        <button class="btn btn-danger mx-2">Eliminar</button>
+      </div>
+    </div>
+
+
+    <!-- Formulario -->
+    <form action="" class="col-5">
+      <div class="mb-3 text-center">
+        <h3>Titulo</h3>
+      </div>
+      <div>
+        <div class="mb-3">
+          <label for="Cuenta" class="form-label">Cuenta</label>
+          <select class="form-select" aria-label="Seleccionar cuenta" id="Cuenta">
+            <option  *ngFor="let cuenta of cuentas" value="{{cuenta.nombre}}">{{cuenta.nombre}}</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="Dias" class="form-label">Fecha</label>
+            <input type="date" name="dias" id="dias"  class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="Dias" class="form-label">Dias</label>
+            <input type="number" name="dias" id="dias" placeholder="0" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="Dias" class="form-label">Hora</label>
+            <input type="time" name="dias" id="dias"  class="form-control">
+          </div>
+        </div>
+        <div class="text-center col-12 mt-3">
+          <button class="btn btn-success" >Actualizar</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

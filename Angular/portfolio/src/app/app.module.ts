@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,9 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { WorksComponent } from './components/works/works.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { VacsComponent } from './components/vacs/vacs.component';
+import { AddVacComponent } from './components/add-vac/add-vac.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { FooterComponent } from './components/footer/footer.component';
     ExperienceComponent,
     WorksComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    VacsComponent,
+    AddVacComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

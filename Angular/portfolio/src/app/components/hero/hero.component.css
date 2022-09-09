@@ -47,12 +47,83 @@ p span {
 }
 
 
-.elDespues:hover {
-  border: 1px solid black;
-  border-radius: 10px;
-  background: rgb(190, 131, 22);
-}
 
 .bgitlab {
   content: url('../../../assets/icons/gitlab-3.svg');
+}
+
+
+.icon{
+  display: inline-block;
+  font-size: 44px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.bi-github{
+  animation-delay: 1s;
+}
+
+.bi-linkedin{
+  animation-delay: 2s;
+}
+
+.bi-twitter{
+  animation-delay: 3s;
+}
+
+.bi-envelope-fill{
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0)}
+  50% { transform: translateY(-15px)}
+  100% { transform: translateY(0)}
+}
+
+@keyframes float2 {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.avatar {
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float2 6s ease-in-out infinite;
+}
+
+.avatar img { width: 100% ;height: auto; }
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.escribir2{
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1em solid #141414;
+  border-width: 0 0 1em 1em;
+  animation: typing 4s steps(21) 1s 1 normal both, blink 1s steps(1) infinite;
 }

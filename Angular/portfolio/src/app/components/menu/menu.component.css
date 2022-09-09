@@ -1,8 +1,38 @@
 .nav-link.active {
   background-color: #b1b1b1;
-  border: 0 ;
+  border: 0px ;
+  border-radius: 15px;
+  color: white;
+
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link .button {
+  border-radius: 20px;
 }
 
 h5 {
   margin: 10px;
+}
+
+.menuOpciones{
+  z-index: 99;
+}
+
+.h-tot-menu {
+  height: 10vh;
+  max-height: 20vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links{
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }

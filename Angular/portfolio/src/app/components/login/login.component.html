@@ -1,22 +1,23 @@
 <div class="h-tot justify-content-center align-items-center d-flex">
   <div class="login-box">
     <h2>Login</h2>
-    <form>
+    <form (ngSubmit)="userLogin()">
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" [(ngModel)]="user.userId"  name="userId" id="userId" required="">
         <label>Username</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input type="password" [(ngModel)]="user.password" name="password" id="password" required="" >
         <label>Password</label>
       </div>
-      <a href="#" class="justify-content-center d-flex">
+
+      <button type="submit" class="justify-content-center d-flex">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         Submit
-      </a>
+      </button>
     </form>
   </div>
 </div>
